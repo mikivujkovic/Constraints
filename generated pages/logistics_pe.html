@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Logistics - Next-Generation Supply Chain Management</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --secondary: #475569;
+            --accent: #3b82f6;
+            --background: #f8fafc;
+            --text: #1e293b;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.5;
+            color: var(--text);
+            background: var(--background);
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: white;
+            padding: 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+
+        .navbar-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: none;
+        }
+
+        .nav-links a {
+            color: var(--secondary);
+            text-decoration: none;
+            margin-left: 2rem;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .mobile-menu-btn {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--secondary);
+            cursor: pointer;
+        }
+
+        .hero {
+            margin-top: 4rem;
+            padding: 4rem 1rem;
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            color: white;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            color: #94a3b8;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 0.5rem;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background: var(--primary-dark);
+        }
+
+        .features {
+            padding: 4rem 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .features h2 {
+            text-align: center;
+            margin-bottom: 3rem;
+            font-size: 2rem;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .feature-card h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .stats {
+            background: var(--primary);
+            color: white;
+            padding: 4rem 1rem;
+            text-align: center;
+        }
+
+        .stats-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+
+        .stat-item h3 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer {
+            background: var(--text);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        @media (min-width: 768px) {
+            .nav-links {
+                display: flex;
+            }
+
+            .mobile-menu-btn {
+                display: none;
+            }
+
+            .features-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .hero h1 {
+                font-size: 3.5rem;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .features-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .mobile-menu {
+            position: fixed;
+            top: 4rem;
+            left: 0;
+            width: 100%;
+            background: white;
+            padding: 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: none;
+        }
+
+        .mobile-menu.active {
+            display: block;
+        }
+
+        .mobile-menu a {
+            display: block;
+            padding: 0.5rem 0;
+            color: var(--secondary);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar" role="navigation">
+        <div class="navbar-container">
+            <a href="#" class="logo">Quantum Logistics</a>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#stats">Impact</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">☰</button>
+        </div>
+        <div class="mobile-menu">
+            <a href="#features">Features</a>
+            <a href="#stats">Impact</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Transform Your Supply Chain with Quantum-Powered Intelligence</h1>
+            <p>Leverage quantum computing and advanced analytics to reduce costs by up to 30% while improving delivery accuracy and speed.</p>
+            <a href="#contact" class="cta-button">Schedule a Demo</a>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <h2>QuantumFlow™ Platform Features</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <h3>Real-time Fleet Management</h3>
+                <p>Optimize your fleet operations in real-time with quantum-inspired algorithms that adapt to changing conditions instantly.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Predictive Maintenance</h3>
+                <p>Prevent costly breakdowns with AI-powered maintenance scheduling that predicts equipment needs before failures occur.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Dynamic Inventory</h3>
+                <p>Maintain optimal inventory levels with intelligent forecasting that responds to market demands and supply chain disruptions.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Carbon Footprint Tracking</h3>
+                <p>Monitor and reduce your environmental impact with detailed carbon emissions tracking and optimization recommendations.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Multi-modal Planning</h3>
+                <p>Coordinate across different transportation modes seamlessly for maximum efficiency and cost savings.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Risk Assessment</h3>
+                <p>Identify and mitigate supply chain risks before they impact your operations with advanced predictive analytics.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats" id="stats">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <h3>30%</h3>
+                <p>Average Cost Reduction</p>
+            </div>
+            <div class="stat-item">
+                <h3>100+</h3>
+                <p>Enterprise Clients</p>
+            </div>
+            <div class="stat-item">
+                <h3>1M+</h3>
+                <p>Annual Shipments Managed</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 Quantum Logistics. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const mobileMenu = document.querySelector('.mobile-menu');
+
+            mobileMenuBtn.addEventListener('click', function() {
+                mobileMenu.classList.toggle('active');
+                const isExpanded = mobileMenu.classList.contains('active');
+                mobileMenuBtn.setAttribute('aria-expanded', isExpanded);
+            });
+
+            // Close mobile menu when clicking a link
+            const mobileLinks = mobileMenu.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.remove('active');
+                    mobileMenuBtn.setAttribute('aria-expanded', false);
+                });
+            });
+
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

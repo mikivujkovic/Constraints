@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellness Horizon - Personalized Holistic Health Solutions</title>
+    <meta name="description" content="Wellness Horizon combines traditional healing with modern technology for comprehensive health solutions. Virtual consultations, personalized wellness plans, and corporate programs available.">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="font-sans antialiased text-gray-900">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="text-xl font-bold text-teal-600">Wellness Horizon</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#services" class="text-gray-700 hover:text-teal-600 transition-colors">Services</a>
+                    <a href="#approach" class="text-gray-700 hover:text-teal-600 transition-colors">Our Approach</a>
+                    <a href="#corporate" class="text-gray-700 hover:text-teal-600 transition-colors">Corporate Solutions</a>
+                    <button class="bg-teal-600 text-white px-6 py-2 rounded-full hover:bg-teal-700 transition-colors">
+                        Get Started
+                    </button>
+                </div>
+                <button id="mobile-menu-button" class="md:hidden flex items-center">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#services" class="block px-3 py-2 text-gray-700">Services</a>
+                <a href="#approach" class="block px-3 py-2 text-gray-700">Our Approach</a>
+                <a href="#corporate" class="block px-3 py-2 text-gray-700">Corporate Solutions</a>
+                <button class="w-full mt-2 bg-teal-600 text-white px-6 py-2 rounded-full">
+                    Get Started
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 bg-gradient-to-br from-teal-50 to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                    Your Personalized Path to Holistic Wellness
+                </h1>
+                <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+                    Experience the perfect blend of traditional healing wisdom and cutting-edge technology for your unique wellness journey.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <button class="bg-teal-600 text-white px-8 py-4 rounded-full text-lg hover:bg-teal-700 transition-colors">
+                        Start Your Journey
+                    </button>
+                    <button class="border-2 border-teal-600 text-teal-600 px-8 py-4 rounded-full text-lg hover:bg-teal-50 transition-colors">
+                        Book a Consultation
+                    </button>
+                </div>
+                <div class="mt-12 flex flex-col sm:flex-row items-center justify-center gap-8">
+                    <div class="flex items-center gap-2">
+                        <svg class="h-5 w-5 text-teal-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        <span>50,000+ Active Users</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <svg class="h-5 w-5 text-teal-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        <span>15 Physical Locations</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <svg class="h-5 w-5 text-teal-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        <span>Fortune 500 Partners</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Comprehensive Wellness Solutions</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Discover our range of personalized services designed to support your complete well-being
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="h-6 w-6 text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Personalized Assessments</h3>
+                    <p class="text-gray-600">Comprehensive wellness evaluations tailored to your unique needs and goals.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="h-6 w-6 text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">VitaSync™ Platform</h3>
+                    <p class="text-gray-600">Our proprietary platform integrates your health data for real-time wellness tracking.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="h-6 w-6 text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Nutrition Programs</h3>
+                    <p class="text-gray-600">Custom nutrition plans and supplement recommendations based on your body's needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Approach Section -->
+    <section id="approach" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">The Perfect Balance of Tradition & Technology</h2>
+                    <p class="text-xl text-gray-600 mb-8">
+                        We combine ancient healing wisdom with modern scientific advances to create a comprehensive approach to wellness that works for today's world.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-4">
+                            <svg class="h-6 w-6 text-teal-600 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <div>
+                                <h3 class="font-semibold mb-1">Traditional Healing Practices</h3>
+                                <p class="text-gray-600">Time-tested methods that have promoted wellness for generations</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <svg class="h-6 w-6 text-teal-600 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <div>
+                                <h3 class="font-semibold mb-1">Modern Technology</h3>
+                                <p class="text-gray-600">Advanced tracking and personalization through our VitaSync™ platform</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <svg class="h-6 w-6 text-teal-600 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <div>
+                                <h3 class="font-semibold mb-1">Data-Driven Insights</h3>
+                                <p class="text-gray-600">Real-time health metrics to optimize your wellness journey</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mt-12 lg:mt-0">
+                    <img src="/api/placeholder/600/400" alt="Wellness approach illustration" class="rounded-2xl shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Corporate Section -->
+    <section id="corporate" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Corporate Wellness Solutions</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Empower your workforce with comprehensive wellness programs trusted by Fortune 500 companies
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="h-6 w-6 text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Employee Wellness Programs</h3>
+                    <p class="text-gray-600">Customized wellness solutions that boost productivity and employee satisfaction.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="h-6 w-6 text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Analytics Dashboard</h3>
+                    <p class="text-gray-600">Track program effectiveness and ROI with our comprehensive reporting tools.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="h-6 w-6 text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Scalable Solutions</h3>
+                    <p class="text-gray-600">Flexible programs that grow with your organization's needs and goals.</p>
+                </div>
+            </div>
+            <div class="mt-16 text-center">
+                <button class="bg-teal-600 text-white px-8 py-4 rounded-full text-lg hover:bg-teal-700 transition-colors">
+                    Schedule a Corporate Demo
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 bg-teal-600">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-white mb-6">Start Your Wellness Journey Today</h2>
+            <p class="text-xl text-white/90 mb-8 max-w-3xl mx-auto">
+                Join thousands of individuals and organizations already experiencing the benefits of our holistic approach to wellness.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <button class="bg-white text-teal-600 px-8 py-4 rounded-full text-lg hover:bg-gray-100 transition-colors">
+                    Get Started Now
+                </button>
+                <button class="border-2 border-white text-white px-8 py-4 rounded-full text-lg hover:bg-white/10 transition-colors">
+                    Contact Sales
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-8 md:mb-0">
+                    <span class="text-2xl font-bold text-white">Wellness Horizon</span>
+                    <p class="mt-2">Transforming lives through holistic wellness</p>
+                </div>
+                <nav class="flex flex-wrap justify-center gap-8">
+                    <a href="#services" class="hover:text-white transition-colors">Services</a>
+                    <a href="#approach" class="hover:text-white transition-colors">Our Approach</a>
+                    <a href="#corporate" class="hover:text-white transition-colors">Corporate Solutions</a>
+                    <a href="#" class="hover:text-white transition-colors">Contact</a>
+                </nav>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-800 text-center">
+                <p>&copy; 2025 Wellness Horizon. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu JavaScript -->
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const target = document.querySelector(targetId);
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

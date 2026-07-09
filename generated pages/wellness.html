@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellness Horizon</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f3f4f6;
+            text-align: center;
+        }
+        header {
+            background: #00796b;
+            color: white;
+            padding: 20px;
+        }
+        .container {
+            padding: 20px;
+        }
+        .btn {
+            display: inline-block;
+            background: #00796b;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .service-box {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        .contact-form {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 60%;
+            margin: 20px auto;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .footer {
+            background: #00796b;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Wellness Horizon</h1>
+        <p>Bridging Traditional Healing with Modern Technology</p>
+    </header>
+    
+    <div class="container">
+        <h2>Your Personalized Path to Wellness</h2>
+        <p>Integrating traditional healing, modern medicine, and advanced technology to provide comprehensive wellness solutions.</p>
+        <a href="#contact" class="btn">Get Started</a>
+    </div>
+    
+    <div class="container services">
+        <div class="service-box">
+            <h3>Personalized Wellness Plans</h3>
+            <p>Tailored health assessments and tracking.</p>
+        </div>
+        <div class="service-box">
+            <h3>Wearable Data Integration</h3>
+            <p>Sync your health data for better insights.</p>
+        </div>
+        <div class="service-box">
+            <h3>Virtual & In-Person Consultations</h3>
+            <p>Expert guidance for your wellness journey.</p>
+        </div>
+        <div class="service-box">
+            <h3>Nutrition & Supplements</h3>
+            <p>Custom programs for a healthier lifestyle.</p>
+        </div>
+        <div class="service-box">
+            <h3>Mind-Body Wellness</h3>
+            <p>Holistic practices for mental and physical balance.</p>
+        </div>
+        <div class="service-box">
+            <h3>Corporate Wellness</h3>
+            <p>Solutions designed for employee health.</p>
+        </div>
+    </div>
+    
+    <div id="contact" class="container contact-form">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+        <p id="formMessage" style="color: green; display: none;">Thank you for reaching out! We'll get back to you soon.</p>
+    </div>
+    
+    <footer class="footer">
+        <p>&copy; 2025 Wellness Horizon. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            document.getElementById('formMessage').style.display = 'block';
+            this.reset();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+id,image_id,company,generation_type,color_harmony_contrast,typography_readability,spatial_layout_balance,visual_hierarchy,design_consistency,message_clarity,brand_voice_consistency,cta_effectiveness,value_proposition,content_structure,navigation_intuitiveness,information_architecture,mobile_responsiveness,load_time_performance,interaction_design,conversion_potential,brand_alignment,target_audience,competitive_differentiation,market_readiness
+Claude Sonnet,img1_1,Eco Harvest,netai,5,4,5,4,5,5,5,4,5,5,4,5,4,4,4,4,5,5,5,5
+Claude Sonnet,img1_2,Eco Harvest,prompt_eng,3,3,3,3,4,4,4,3,4,3,4,3,4,4,3,3,4,4,3,4
+Claude Sonnet,img1_3,Eco Harvest,naive,4,3,2,2,3,3,3,2,3,2,3,2,3,4,2,2,3,3,2,3
+Claude Sonnet,img1_4,Quantum Logistics,prompt_eng,4,4,4,4,5,5,5,4,5,5,4,5,4,4,3,4,5,5,5,5
+Claude Sonnet,img1_5,Quantum Logistics,netai,5,5,5,5,5,5,5,5,5,5,5,5,5,4,5,5,5,5,5,5
+Claude Sonnet,img1_6,Quantum Logistics,naive,3,4,3,3,4,4,4,3,4,3,3,3,4,5,2,3,4,4,3,3
+Claude Sonnet,img1_7,Sentinel Cybershield,naive,4,4,4,4,4,5,4,4,5,4,4,4,4,4,3,4,5,5,4,5
+Claude Sonnet,img1_8,Sentinel Cybershield,prompt_eng,3,4,3,3,4,4,4,4,3,3,4,3,4,5,2,3,4,4,3,4
+Claude Sonnet,img1_9,Sentinel Cybershield,netai,5,5,5,5,5,5,5,5,5,5,4,5,4,3,5,5,5,5,5,5
+Claude Sonnet,img1_10,Wellness Horizon,netai,5,5,5,5,5,5,5,4,5,5,4,5,5,4,4,5,5,5,5,5
+Claude Sonnet,img1_11,Wellness Horizon,naive,4,4,3,3,4,4,4,3,4,3,4,3,4,5,2,3,4,4,3,4
+Claude Sonnet,img1_12,Wellness Horizon,prompt_eng,4,5,5,5,5,5,5,4,5,5,5,5,5,5,4,4,5,5,5,5
+GPT 4o,img1_1,Eco Harvest,netai,4,4,5,5,5,5,5,4,5,5,5,5,4,5,4,4,5,5,4,5
+GPT 4o,img1_2,Eco Harvest,prompt_eng,3,4,4,3,4,5,5,3,4,4,4,4,4,5,3,3,4,4,3,4
+GPT 4o,img1_3,Eco Harvest,naive,2,3,2,2,3,3,4,2,3,2,4,2,3,5,2,2,3,3,2,3
+GPT 4o,img1_4,Quantum Logistics,prompt_eng,5,5,4,5,5,5,5,5,5,5,5,5,5,4,4,5,5,5,4,5
+GPT 4o,img1_5,Quantum Logistics,netai,4,4,5,5,5,5,5,4,5,5,5,5,4,4,4,4,5,5,5,5
+GPT 4o,img1_6,Quantum Logistics,naive,3,4,4,4,5,5,4,4,4,5,5,5,5,5,3,4,4,5,3,5
+GPT 4o,img1_7,Sentinel Cybershield,naive,4,5,4,5,5,5,5,5,5,4,5,5,4,4,4,5,5,5,4,5
+GPT 4o,img1_8,Sentinel Cybershield,prompt_eng,3,4,3,3,4,5,5,4,3,3,4,4,4,5,3,3,4,4,3,4
+GPT 4o,img1_9,Sentinel Cybershield,netai,4,3,5,5,5,4,5,5,5,4,4,5,4,4,5,5,5,5,5,5
+GPT 4o,img1_10,Wellness Horizon,netai,4,4,5,5,5,5,5,4,5,5,4,5,5,5,4,4,5,5,4,5
+GPT 4o,img1_11,Wellness Horizon,naive,4,4,4,3,5,5,5,3,4,5,5,5,5,5,3,3,4,5,3,5
+GPT 4o,img1_12,Wellness Horizon,prompt_eng,4,5,5,4,5,5,5,4,5,5,5,5,5,5,3,4,5,5,4,5
+Gemini,img1_1,Eco Harvest,netai,4,4,4,4,4,4,4,3,4,4,4,4,4,4,3,4,5,4,4,4
+Gemini,img1_2,Eco Harvest,prompt_eng,3,3,4,3,4,4,4,3,4,4,4,4,4,5,2,3,4,3,3,4
+Gemini,img1_3,Eco Harvest,naive,2,3,3,2,3,4,4,2,3,3,4,3,4,5,2,2,3,2,2,3
+Gemini,img1_4,Quantum Logistics,prompt_eng,4,4,4,4,4,4,4,4,4,4,4,4,4,4,3,4,5,4,4,4
+Gemini,img1_5,Quantum Logistics,netai,3,3,3,3,3,3,4,3,3,3,4,3,4,4,3,3,4,3,3,4
+Gemini,img1_6,Quantum Logistics,naive,2,3,2,2,3,4,4,3,4,4,3,3,4,5,2,3,3,3,4,4
+Gemini,img1_7,Sentinel Cybershield,naive,4,4,4,4,4,4,4,4,4,4,4,4,4,4,3,4,5,4,4,4
+Gemini,img1_8,Sentinel Cybershield,prompt_eng,3,3,3,3,4,4,4,3,3,3,4,3,4,4,3,3,4,3,3,4
+Gemini,img1_9,Sentinel Cybershield,netai,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,5,4,4,5
+Gemini,img1_10,Wellness Horizon,netai,4,4,4,4,4,3,3,3,3,3,3,3,3,4,3,3,4,3,3,3
+Gemini,img1_11,Wellness Horizon,naive,4,4,4,4,4,4,4,4,4,4,3,3,3,5,3,4,5,4,3,4
+Gemini,img1_12,Wellness Horizon,prompt_eng,4,4,4,4,4,4,4,4,4,4,4,4,4,4,3,4,5,4,4,4
+DeepSeek,img1_1,Eco Harvest,netai,4,4,4,4,4,5,5,4,5,5,4,5,4,4,4,5,5,5,5,5
+DeepSeek,img1_2,Eco Harvest,prompt_eng,4,4,4,4,4,5,5,4,5,5,4,5,4,4,4,5,5,5,5,5
+DeepSeek,img1_3,Eco Harvest,naive,4,4,4,4,4,5,5,4,5,5,4,5,4,4,4,5,5,5,5,5
+DeepSeek,img1_4,Quantum Logistics,prompt_eng,4,4,4,4,4,5,5,5,5,5,4,5,4,4,4,5,5,5,5,5
+DeepSeek,img1_5,Quantum Logistics,netai,4,4,4,4,4,5,5,5,5,5,4,5,4,4,4,5,5,5,5,5
+DeepSeek,img1_6,Quantum Logistics,naive,4,4,4,4,4,5,5,5,5,5,4,5,4,4,4,5,5,5,5,5
+DeepSeek,img1_7,Sentinel Cybershield,naive,4,4,4,4,4,5,5,5,5,5,5,5,4,4,4,5,5,5,5,5
+DeepSeek,img1_8,Sentinel Cybershield,prompt_eng,4,4,4,4,4,5,5,5,5,5,5,5,4,4,4,5,5,5,5,5
+DeepSeek,img1_9,Sentinel Cybershield,netai,3,3,3,3,3,4,4,4,4,4,4,4,3,3,3,4,4,4,4,4
+DeepSeek,img1_10,Wellness Horizon,netai,4,3,4,4,4,3,4,4,4,3,4,4,3,4,4,4,4,4,4,4
+DeepSeek,img1_11,Wellness Horizon,naive,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4
+DeepSeek,img1_12,Wellness Horizon,prompt_eng,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4
