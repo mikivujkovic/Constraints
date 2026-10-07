@@ -93,9 +93,12 @@ including:
 
 ## License
 
-Released for academic reproducibility. Recommended: code under the MIT License and
-data/text under CC BY 4.0 (matching the PLOS ONE article license). Add `LICENSE`
-files before making the repository public.
+This repository uses two licenses:
+
+- **Source code** (the scripts in `analysis/`) is licensed under the **MIT License** — see `LICENSE`.
+- **Data and non-software content** (datasets, prompts, and generated page content) is licensed under the **Creative Commons Attribution 4.0 International License (CC BY 4.0)** — see `LICENSE-data` — matching the PLOS ONE article license.
+
+When reusing the data or materials, please cite the article (see Citation below).
 
 ## Citation
 
