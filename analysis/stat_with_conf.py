@@ -151,7 +151,7 @@ def interpret_effect_size(delta):
 
 def main():
     # Read the CSV file
-    df = pd.read_csv("/data/Human_evaluations.csv")
+    df = pd.read_csv("data/Human_evaluations.csv")
 
     # Define dimension categories
     dimensions = {
@@ -357,7 +357,7 @@ def main():
         )
 
         outfile.write(
-            f"{'Dimension':<30} {'Comparison':<25} {"Cliff's delta":<15} {'95% CI':<20} {'Effect Size':<15}\n"
+            f"{'Dimension':<30} {'Comparison':<25} Cliff's delta   {'95% CI':<20} {'Effect Size':<15}\n"
         )
         outfile.write(f"{'-' * 30} {'-' * 25} {'-' * 15} {'-' * 20} {'-' * 15}\n")
 

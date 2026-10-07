@@ -1,6 +1,6 @@
 # Constraints are all you need — reproducibility materials
 
-Data, analysis scripts, prompts, schemas, and generated landing-page code for the study:
+Data, analysis scripts, prompts, and generated landing-page code for the study:
 
 > **Constraints are all you need: Exploring AI-powered landing page design**
 > Vujković M, Popović T, Jovović I, Drakić-Grgur M. *PLOS ONE* (under review). Manuscript PONE-D-25-55869.
@@ -62,6 +62,10 @@ python analysis/corr.py
 # Repeated-measures + sensitivity analyses (Friedman, Wilcoxon, mixed model,
 # leave-one-company-out, bootstrap)                                           -> S10
 python analysis/repeated_measures_analysis.py data/Human_evaluations.csv
+
+# Second-round additions: participant counts per role and a crossed
+# rater + landing-page random-effects model                                   -> S10 (S10.3b), Methods
+python analysis/r2_additional_analyses.py data/Human_evaluations.csv
 ```
 
 The `repeated_measures_analysis.py` script reproduces the values reported in the
@@ -74,6 +78,8 @@ including:
 - Leave-one-company-out improvement range 13.4%–21.7% (full sample 16.8%)
 - Bootstrap 95% CIs: improvement [7.9%, 24.8%]; Cliff's δ (CvU) [0.25, 0.47]
 
+`r2_additional_analyses.py` reproduces the participant counts per professional role (15 developers, 9 designers, 6 business, 6 project managers, 29 other) and the crossed random-effects model (constrained β = +0.595, p < 10⁻⁴; landing-page variance 0.042 vs rater variance 0.343) reported in S10 Table.
+
 ---
 
 ## Generation and evaluation setup
@@ -81,7 +87,7 @@ including:
 - **Unconstrained / prompt-engineered:** generated through the GUI chat interfaces of chatgpt.com (GPT-4o) and claude.ai (Claude 3.5 Sonnet); prompts in `prompts/`.
 - **Constrained (netAI):** generated through the OpenAI API using the multi-stage pipeline in the [netAI repository](https://github.com/mikivujkovic/netAI)
 - **Generation date:** 17 February 2025. **LLM assessment date:** 18 March 2025.
-- **LLM evaluators:** Claude 3.5 Sonnet, GPT-4o, Gemini 2.0, DeepSeek V3, each given a rendered screenshot of the page plus the standardized prompt in `prompts/llm_evaluation_prompt.txt` (vision-capable endpoints).
+- **LLM evaluators:** Claude 3.5 Sonnet, GPT-4o, Gemini 2.0, DeepSeek V3, each given a rendered screenshot of the page plus the standardized prompt in `prompts/llm_assessment.md` (vision-capable endpoints).
 
 ---
 

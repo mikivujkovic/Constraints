@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+
+# Generated analysis outputs (reproduce by running the scripts)
+results.txt
+results_with_conf.txt
+llms_results.txt
+correlation_analysis.txt
+human_llm_correlation.png

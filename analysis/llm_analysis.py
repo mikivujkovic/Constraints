@@ -93,7 +93,7 @@ def calculate_cliffs_delta(group1, group2):
 
 def main():
     # Read the CSV file
-    df = pd.read_csv("/data/LLM_evaluations.csv")
+    df = pd.read_csv("data/LLM_evaluations.csv")
 
     # Define dimension categories
     dimensions = {
@@ -275,7 +275,7 @@ def main():
         ]
 
         outfile.write(
-            f"{'Dimension':<30} {'Comparison':<25} {"Cliff's delta":<15} {'Effect Size':<15}\n"
+            f"{'Dimension':<30} {'Comparison':<25} Cliff's delta   {'Effect Size':<15}\n"
         )
         outfile.write(f"{'-' * 30} {'-' * 25} {'-' * 15} {'-' * 15}\n")
 

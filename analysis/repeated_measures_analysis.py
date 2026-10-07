@@ -25,7 +25,7 @@ from scipy import stats
 
 warnings.filterwarnings("ignore")
 
-CSV = sys.argv[1] if len(sys.argv) > 1 else "/data/Human_evaluations.csv"
+CSV = sys.argv[1] if len(sys.argv) > 1 else "data/Human_evaluations.csv"
 df = pd.read_csv(CSV)
 RATER = "rater" if "rater" in df.columns else "email"  # works with either label
 
